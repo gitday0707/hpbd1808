@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="./style/style.css">
+      \<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Happy Birthday to You!</title>
+  </head>
+  <body id="a">
+    <img id="cake" src="https://i.pinimg.com/originals/45/72/be/4572be0dfbefad294e5d4ab55b110bd2.gif" alt="cake">
+    <audio id="bg-music" autoplay loop>
+    <source src="./sound/HPBD.mp3" type="audio/mpeg">
+  </audio>
+  <div class="button">
+    <button id="button" onclick="location.href='flower.html'">Chuyển sang quà tiếp theo nào 🥰</button>
+  </div>
+<!-- Thêm link SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+Swal.fire({
+  title: '🎉 Chúc mừng sinh nhật!',
+  html: `
+    <div class="swal-text-love">
+      Chúc người ấy của tôi sinh nhật đầy ắp tiếng cười,<br>
+      tuổi mới ngày càng xinh đẹp, ngày càng học giỏi😍, <br>
+      bớt cãi bướng, bớt lười và bớt thức khuya lại. 😤😤<br>  
+      Always belong to me😊😊<br> 
+      <b>Happy Birthday!🎂</b>
+    </div>
+  `,
+  icon: 'success',
+  confirmButtonText: '💖 Cảm ơn!',
+  background: '#fff0f5',
+  color: '#ff1493',
+  confirmButtonColor: '#ff69b4',
+  customClass: {
+    title: 'swal-title-love'
+  }
+});
+
+</script>
+  </body>
+</html>
